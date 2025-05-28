@@ -179,7 +179,7 @@ write_target () {
     
     # Resources are expected to be inside the $library/Resources folder
     # Note: disabling because these resources will not be in the main bundle
-    # https://github.com/akaffenberger/firebase-ios-sdk-xcframeworks/issues/23
+    # https://github.com/Lxrd-AJ/firebase-ios-sdk-xcframeworks/issues/23
     # if [ -d "$library/Resources" ]; then
     #    printf ",\n      resources: [" >> $output
     #    comma=""; for i in "$library/Resources/*"; do printf "$comma
@@ -275,7 +275,7 @@ set -o pipefail
 
 # Repos
 firebase_repo="https://github.com/firebase/firebase-ios-sdk"
-xcframeworks_repo="https://github.com/akaffenberger/firebase-ios-sdk-xcframeworks"
+xcframeworks_repo="https://github.com/Lxrd-AJ/firebase-ios-sdk-xcframeworks"
 
 # Release versions
 latest=$(latest_release_number $firebase_repo)
