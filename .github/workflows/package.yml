@@ -21,5 +21,5 @@ jobs:
           python-version: '3.x'
 
       - name: Release
-        # run: cd .scripts && sh ./package.sh
-        run: cd .scripts && python3 ./package.py
+        run: cd .scripts && sh ./package.sh
+        # run: cd .scripts && python3 ./package.py
