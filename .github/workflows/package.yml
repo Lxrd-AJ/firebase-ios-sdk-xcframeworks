@@ -16,4 +16,5 @@ jobs:
         run: echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
 
       - name: Release
-        run: cd .scripts && sh ./package.sh
+        # run: cd .scripts && sh ./package.sh
+        run: cd .scripts && python3 ./package.py
